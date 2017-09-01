@@ -62,11 +62,8 @@ class RoverState():
         # get creative in adding new fields or modifying these!
         self.turn_count = 0
         self.count = 0
-        self.timeRec = time.time()
-        self.timeRev = 0
         self.stuck_yet = False
         self.turning = False
-        self.velRec = 0
         self.stop_forward = 50 # Threshold to initiate stopping
         self.go_forward = 500 # Threshold to go forward again
         self.max_vel = 2 # Maximum velocity (meters/second)

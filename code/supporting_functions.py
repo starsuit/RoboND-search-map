@@ -54,7 +54,7 @@ def update_rover(Rover, data):
       Rover.throttle,'\n',  'steer_angle =', Rover.steer, '\n',  'near_sample:', Rover.near_sample,'\n',
       'picking_up:', data["picking_up"],'\n',  'sending pickup:', Rover.send_pickup,'\n',
       'total time:', Rover.total_time,'\n',  'samples remaining:', data["sample_count"],'\n',
-      'samples collected:', Rover.samples_collected,'\n', "stuck_yet =", Rover.stuck_yet,'\n',  "pitch =", Rover.pitch,'\n',  "roll =", Rover.roll)
+      'samples collected:', Rover.samples_collected,'\n', "stuck_yet =", Rover.stuck_yet,'\n',  "pitch =", Rover.pitch,'\n',  "roll =", Rover.roll,'\n', "count =", Rover.count)
       # Get the current image from the center camera of the rover
       imgString = data["image"]
       image = Image.open(BytesIO(base64.b64decode(imgString)))
