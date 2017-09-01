@@ -1,6 +1,5 @@
 ## Project: Search and Sample Return
 
----
 
 
 **The goals / steps of this project are the following:**  
