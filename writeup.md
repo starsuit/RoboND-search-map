@@ -93,7 +93,7 @@ FPS: ~28-33
         # weighted in favour of navigable, to counter effect of shadows on RGB threshold
         Rover.worldmap[navigable_y_world, navigable_x_world, 2] += 10
         Rover.worldmap[navigable_y_world, navigable_x_world, 0] -= 1
-        ```
+```
 I left the rock channel as it was, as there seemed to be no issue with fidelity there.    
 
 * All this had the rover running with around 80% + fidelity, which I was pretty happy with. The rover very rarely gets un-fixably stuck, and this mainly seems to be down to bugs in the simulation- sometimes the rover gets stuck "in" a rock, and "sees" clear space in front.
@@ -103,4 +103,4 @@ I left the rock channel as it was, as there seemed to be no issue with fidelity 
 
 * I'd like to pursue the project further; I think once my grasp of python has improved I could do a lot more. I'd like to encourage the rover to visit previously unexplored places and ignore already explored places. I'd also like to work on the sample return, getting the rover to home in on sample rocks and pick them up.
 
-  code![Sped up gif of my rover running autonomously][image2]
+  ![Sped up gif of my rover running autonomously][image2]
