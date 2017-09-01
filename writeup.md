@@ -75,8 +75,7 @@ FPS: ~28-33
 * I also wanted to try and make the rover a "wall-crawler". After experimenting with min and max angles, I found that the simplest solution was just to add a certain number of degrees to the mean of navigable angles:
 `Rover.steer = np.clip(np.mean(Rover.nav_angles * 180/np.pi) + 12 , -15, 15)`. There was some trial and error as I varied my angles- too large an angle would steer the rover into the wall a lot, too small and it wouldn't stick to the wall at all. I settled on 12, making the rover offset the mean navigable path by 12 degrees, hugging the left wall.   
 
-
-* Around this time I also implemented a few debugging features. Adding the rover status into the simulator itself, overlaid on the worldmap helped me understand the rover's immediate "thinking state". I also added the new features like `Rover.stuck_yet` and `Rover.count` to the printout in the command line. I also changed the formatting so that each feature printed on a new line. This meant that the values would "stay in the same place" in the command line as they updated.  
+* Around this time I also implemented a few debugging features. Adding the rover status into the simulator itself, overlaid on the worldmap helped me understand the rover's immediate "thinking state". I also added the new features like `Rover.stuck_yet` and `Rover.count` to the printout in the command line. I also changed the formatting so that each feature printed on a line. This meant that the values would stay in the same place in the command line as they updated.
 
 ![Command line printout][image3]
 
